@@ -1,0 +1,116 @@
+.header {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 100px;
+    color: black;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.logo {
+    justify-self: center;
+    align-self: center;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.menu {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.menu:hover {
+    text-decoration: underline;
+}
+
+.button {
+    justify-self: center;
+    align-self: center;
+    width: 180px;
+    height: 60px;
+    color: white;
+    background-color: #5B6460;
+    gap: 10px;
+}
+
+.button:active {
+    color: #1eafd0;
+}
+
+.image {
+    position: relative;
+}
+
+.iceland {
+    width: 100%;
+}
+
+.text {
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 55px;
+    line-height: 72px;
+    color: white;
+}
+
+.text2 {
+    position: absolute;
+    top: 28%;
+    right: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+    color: white;
+    text-align: center;
+}
+
+.section1 {
+    display: grid;
+    grid-template-columns: 100px repeat(2, 1fr);
+    grid-template-rows: 450px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.h2 {
+    margin-top: 130px;
+    font-size: 30px;
+}
+
+.text3 {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.cabins {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.imagebed {
+    margin-top: 100px;
+    width: 45vw;
+    justify-self: end;
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+.readmore {
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.readmore:hover {
+    text-decoration: underline;
+}
