@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive</title>
+    <link rel="stylesheet" href="Normalize.css">
+    <style>
+        @media screen and (min-width: 1024px) {
+            .table {
+                display: grid;
+                width: 100%;
+                height: 100vh;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: 15% 1fr 23%;
+                grid-template-areas: "hd hd hd hd hd"
+                    "mn mn mn sd sd"
+                    "ft ft ft ft ft";
+            }
+
+            .header {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(226, 218, 218);
+                grid-area: hd;
+            }
+
+            .main {
+                display: grid;
+                grid-area: mn;
+            }
+
+            .content {
+                display: grid;
+                grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+                background-color: antiquewhite;
+            }
+
+            .item {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .itemn {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                grid-template-rows: minmax(50px, 1fr);
+                margin: 10px;
+                gap: 10px;
+            }
+
+            .item1 {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(241, 167, 71);
+            }
+
+            .item3 {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(241, 167, 71);
+                margin: 10px;
+            }
+
+            .sidebar {
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(183, 235, 231);
+                grid-area: sd;
+            }
+
+            .footer {
+                display: grid;
+                grid-area: ft;
+            }
+
+            .section {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                grid-template-rows: 45%;
+                align-content: center;
+                gap: 5px;
+                background-color: rgb(226, 218, 218);
+            }
+
+            .section1 {
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                margin-left: 10px;
+                margin-right: 10px;
+                background-color: white;
+            }
+        }
+
+        @media screen and (min-width:768px) and (max-width: 1023px) {
+            .table {
+                display: grid;
+                width: 100%;
+                height: 100vh;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: 15% 1fr 23%;
+                grid-template-areas: "hd hd hd hd hd"
+                    "mn mn mn sd sd";
+            }
+
+            .header {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(226, 218, 218);
+                grid-area: hd;
+            }
+
+            .main {
+                display: grid;
+                grid-area: mn;
+            }
+
+            .content {
+                display: grid;
+                grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+                background-color: antiquewhite;
+            }
+
+            .item {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .itemn {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                grid-template-rows: minmax(50px, 1fr);
+                margin: 10px;
+                gap: 10px;
+            }
+
+            .item1 {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(241, 167, 71);
+            }
+
+            .item3 {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(241, 167, 71);
+                margin: 10px;
+            }
+
+            .sidebar {
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(183, 235, 231);
+                grid-area: sd;
+            }
+
+            .footer {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .table {
+                display: grid;
+                width: 100%;
+                height: 100vh;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: 15% 1fr 23%;
+                grid-template-areas: "hd hd hd hd hd"
+                    "mn mn mn mn mn"
+                    "sd sd sd sd sd";
+            }
+
+            .header {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(226, 218, 218);
+                grid-area: hd;
+            }
+
+            .main {
+                display: grid;
+                grid-area: mn;
+            }
+
+            .content {
+                display: grid;
+                grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+                background-color: antiquewhite;
+            }
+
+            .item {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .itemn {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                grid-template-rows: minmax(50px, 1fr);
+                margin: 10px;
+                gap: 10px;
+            }
+
+            .item1 {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(241, 167, 71);
+            }
+
+            .item3 {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(241, 167, 71);
+                margin: 10px;
+            }
+
+            .sidebar {
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(183, 235, 231);
+                grid-area: sd;
+            }
+
+            .footer {
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table">
+        <header class="header">
+            <div>[Шапка страницы]</div>
+        </header>
+        <main class="main">
+            <div class="content">
+                <div class="item">[Основная часть]</div>
+                <div class="itemn">
+                    <div class="item1">[Еще 1]</div>
+                    <div class="item1">[Еще 2]</div>
+                </div>
+                <div class="item3">[Еще 3]</div>
+            </div>
+        </main>
+        <aside class="sidebar">
+            <div>[Боковая область]</div>
+        </aside>
+        <footer class="footer">
+            <div class="section">
+                <div class="section1">[Секция футера 1]</div>
+                <div class="section1">[Секция футера 2]</div>
+                <div class="section1">[Секция футера 3]</div>
+                <div class="section1">[Секция футера 4]</div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
