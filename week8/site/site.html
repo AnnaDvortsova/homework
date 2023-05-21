@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Normalize.css">
+    <style>
+        @font-face {
+            font-family: IntroDemo;
+            src: url(fonts/IntroDemo-BlackCAPS.otf) format(opentype);
+        }
+
+        @font-face {
+            font-family: Roboto;
+            src: url(fonts/RobotoSlab-VariableFont_wght.ttf) format(truetype);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: IntroDemo;
+            margin-top: 49px;
+        }
+
+        .header__logo {
+            max-width: 201px;
+            max-height: 40px;
+            margin-left: 76px;
+        }
+
+        .header__btn-look {
+            min-width: 115px;
+            min-height: 38px;
+            border-radius: 100px;
+            background: #5222D0;
+            color: white;
+            font-size: 13px;
+            margin-right: 76px;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .main-buy {
+            display: flex;
+            max-width: 500px;
+            flex-direction: column;
+            margin-left: 126px;
+        }
+
+        .main-buy__header {
+            font-family: IntroDemo;
+            font-size: 60px;
+            max-height: 216px;
+        }
+
+        .main-buy__info {
+            max-width: 487px;
+            font-family: Roboto;
+            font-size: 20px;
+            line-height: 32px;
+            margin-bottom: 20px;
+        }
+
+        .main-buy__btn {
+            font-family: IntroDemo;
+            font-size: 35px;
+            background: #5222D0;
+            color: white;
+            max-width: 270px;
+            min-height: 84px;
+            border-radius: 100px;
+        }
+
+        .main-img {
+            display: flex;
+            width: 940px;
+
+        }
+
+        .main-img__picture {
+            padding-right: 100px;
+            padding-top: 30px;
+            max-width: 940px;
+            max-height: 692px;
+            width: 100%;
+            background-image: url(images/background.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .footer-nav {
+            display: flex;
+            margin-left: 126px;
+            width: 39vw;
+            justify-content: space-between;
+        }
+
+        .footer-nav__link {
+            font-family: Roboto;
+            text-decoration: none;
+            color: #5222D0;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img class="header__logo" src="images/logo.svg" alt="logo">
+            <div class="header__btn">
+                <button class="header__btn-look">Корзина
+                    <img src="images/ico.svg" alt="cart">
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="main-buy">
+                <h1 class="main-buy__header">Виртуальная реальность без проводов</h1>
+                <span class="main-buy__info">Лучшее, что случалось с виртуальным миром в реальности. Новый компактный
+                    шлем
+                    без проводов и дорогих
+                    комьютеров.</span>
+                <button class="main-buy__btn">Купить
+                    <img src="images/button-buy.svg" alt="card">
+                </button>
+            </div>
+            <div class="main-img">
+                <img class="main-img__picture" src="images/guy.svg" alt="guy">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav class="footer-nav">
+            <a href="#" class="footer-nav__link">Возможности</a>
+            <a href="#" class="footer-nav__link">Где купить</a>
+            <a href="#" class="footer-nav__link">Доставка</a>
+            <a href="#" class="footer-nav__link">Помощь</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
